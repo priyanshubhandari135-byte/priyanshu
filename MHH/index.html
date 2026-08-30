@@ -1,168 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mh</title>
+
+
+
+<!DOCTYPE html><html lang="en"><head>
+    
+    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>painting work</title>
+  <link rel="preload" as="image" href="image.png">
   <style>
-    * {
+    body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body {
-      background: #000;
-      color: #fff;
-      line-height: 1.6;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
     }
 
     .container {
-      max-width: 600px;
+      max-width: 960px;
       margin: 0 auto;
-      background: #000;
+      overflow: hidden;
     }
-li{max-width: 500px;margin: 0 auto;color: #ccc;}
 
-    /* Top Image Section */
-    .hero img {
-      width: 100%;
+    .image-section {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-section img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .whatsapp-link {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+    }
+
+    .whatsapp-link img {
+      width: 70px;
+      height: auto;
       display: block;
     }
 
-    /* CTA Section */
-    .cta {
-      padding: 20px;
+    .footer {
       text-align: center;
+      margin-top: 20px;
     }
 
-    .cta button {
-      background: #25d366;
-      color: #fff;
-      border: none;
-      padding: 14px 24px;
-      font-size: 16px;
-      border-radius: 30px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .cta button:hover {
-      opacity: 0.9;
-    }
-
-    /* Content Section */
-    .content {
-      padding: 24px 20px 40px;
-    }
-
-    .content h2 {
-      font-size: 30px;
-      margin-bottom: 12px;
-      text-align: center;
-    }
-
-    .content p {
-      font-size: 16px;
-      margin-bottom: 14px;
-      color: #ccc;
-    }
-
-    /* Footer Buttons */
-    .links {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      padding: 20px;
-    }
-
-    .links a {
+    .footer a {
+      color: #000;
       text-decoration: none;
-      background: #1a1a1a;
-      color: #fff;
-      padding: 12px;
-      text-align: center;
-      border-radius: 8px;
-      font-size: 14px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-weight: 500;
     }
 
-    .links a:hover {
-      background: #2a2a2a;
-    }
-
-    footer {
-      padding: 16px;
+    .About {
+      background: linear-gradient(135deg, #f1f1f1 0%, #e8e8e8 100%);
       text-align: center;
+      padding: 25px;
+      margin-top: 7px;
       font-size: 12px;
-      color: #777;
+      border-top: 3px solid #667eea;
     }
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18024209574"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18024209574');
-</script>
-
-
-<script src="../tracking.js"></script>
-
-<!-- Event snippet for Page view conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18024209574/EjYQCJfm8IocEKa5zpJD',
-      'value': 1.0,
-      'currency': 'INR',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-
-
 </head>
 
-
-
 <body>
+
   <div class="container">
-
-    <!-- Image on Top -->
-    <div class="hero">
-    <a href="https://admin.flipchat.link/pro/ipl2026" onclick="gtag_report_conversion()">  <img src="600x1100.png" alt="Anna King Banner" />
+    <div class="image-section">
+      <a href="https://admin.flipchat.link/pro/ipl2026" target="_blank">
+        <img src="600x1100.png" alt="Banner Image" loading="lazy" width="960" height="540">
+      </a>
     </div>
-
-    <!-- Button Section -->
-    <div class="cta">
-      <button >WhatsApp Now</button></a>
-    </div>
-
-    <!-- Content Section -->
-    <div class="content">
-      
-    <!-- Extra Links -->
-    <div class="links">
-      <a href="#">Subscribe on Twitch</a>
-      <a href="#">Become a Patron</a>
-      <a href="#">Shop My Work</a>
-      <a href="#">Join My Discord</a>
-    </div>
-
-    <footer>
-      © 2026 Anna King. All rights reserved.
-    </footer>
-
   </div>
-</body>
-</html>
+
+  <div class="About">
+    <b>About:</b>Painting is the silent poetry of the soul, a timeless dialogue between hand, eye, and emotion. It transforms blank canvases into vibrant universes of color, capturing fleeting light and profound shadow. More than mere decoration, it is a visual language that expresses what words cannot, preserving human experience and inviting viewers into the artist's intimate world.
+  </div>
+
+</body></html>
