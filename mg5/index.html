@@ -1,202 +1,428 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KW</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Premium Sports Hub</title>
+
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
     }
 
     body {
-      background: #000;
-      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #070b12;
+      color: #ffffff;
       line-height: 1.6;
     }
 
     .container {
-      max-width: 600px;
-      margin: 0 auto;
-      background: #000;
-    }
-li{max-width: 500px;margin: 0 auto;color: #ccc;}
-
-    /* Top Image Section */
-    .hero img {
-      width: 100%;
-      display: block;
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
     }
 
-    /* CTA Section */
-    .cta {
-      padding: 20px;
-      text-align: center;
+    /* HEADER */
+    header {
+      padding: 22px 0;
+      border-bottom: 1px solid #1c2430;
     }
 
-    .cta button {
-      background: #25d366;
-      color: #fff;
-      border: none;
-      padding: 14px 24px;
-      font-size: 16px;
-      border-radius: 30px;
-      cursor: pointer;
-      font-weight: bold;
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .cta button:hover {
-      opacity: 0.9;
+    .logo {
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 1px;
     }
 
-    /* Content Section */
-    .content {
-      padding: 24px 20px 40px;
-    }
-
-    .content h2 {
-      font-size: 30px;
-      margin-bottom: 12px;
-      text-align: center;
-    }
-
-    .content p {
-      font-size: 16px;
-      margin-bottom: 14px;
-      color: #ccc;
-    }
-
-    /* Footer Buttons */
-    .links {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      padding: 20px;
-    }
-
-    .links a {
+    .support-btn {
       text-decoration: none;
-      background: #1a1a1a;
       color: #fff;
-      padding: 12px;
-      text-align: center;
+      background: #16a34a;
+      padding: 11px 20px;
       border-radius: 8px;
+      font-weight: 700;
+    }
+
+    /* ONLINE BAR */
+    .online {
+      text-align: center;
+      margin-top: 25px;
+      color: #55e68b;
       font-size: 14px;
     }
 
-    .links a:hover {
-      background: #2a2a2a;
+    .dot {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      background: #22c55e;
+      border-radius: 50%;
+      margin-right: 6px;
     }
 
-    footer {
-      padding: 16px;
+    /* HERO */
+    .hero {
       text-align: center;
-      font-size: 12px;
-      color: #777;
+      padding: 80px 15px;
+    }
+
+    .hero h1 {
+      font-size: clamp(40px, 7vw, 72px);
+      line-height: 1.05;
+      margin-bottom: 25px;
+      background: linear-gradient(90deg, #ffffff, #8da2bd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: auto;
+      color: #aab4c2;
+      font-size: 18px;
+    }
+
+    .hero-btn {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 16px 30px;
+      background: #16a34a;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 800;
+      transition: 0.3s;
+    }
+
+    .hero-btn:hover {
+      transform: translateY(-3px);
+      background: #22c55e;
+    }
+
+    /* FEATURES */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 80px;
+    }
+
+    .card {
+      background: #101721;
+      border: 1px solid #202b39;
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: #9da9b8;
+    }
+
+    /* STEPS */
+    .section-title {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 45px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 70px;
+    }
+
+    .step {
+      background: #101721;
+      border: 1px solid #202b39;
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    .number {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: #16a34a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .step h3 {
+      margin-bottom: 10px;
+    }
+
+    .step p {
+      color: #9da9b8;
+    }
+
+    /* IMAGE */
+    .sports-image {
+      height: 430px;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 80px;
+      background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.65)),
+        url("https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1400&q=80")
+        center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .sports-image h2 {
+      font-size: 45px;
+      padding: 20px;
+    }
+
+    /* CTA */
+    .final-cta {
+      text-align: center;
+      padding: 70px 20px;
+      background: #0d141d;
+      border-radius: 20px;
+      margin-bottom: 50px;
+    }
+
+    .final-cta h2 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .final-cta p {
+      color: #9da9b8;
+      margin-bottom: 25px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #687586;
+      border-top: 1px solid #1c2430;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+      .header-content {
+        gap: 15px;
+      }
+
+      .logo {
+        font-size: 21px;
+      }
+
+      .support-btn {
+        padding: 9px 14px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 60px 10px;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .features,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .section-title {
+        font-size: 30px;
+      }
+
+      .sports-image {
+        height: 300px;
+      }
+
+      .sports-image h2 {
+        font-size: 32px;
+      }
+
+      .final-cta h2 {
+        font-size: 32px;
+      }
     }
   </style>
-
-
-<script src="../tracking.js"></script>
-
-
-
 </head>
 
-
-
 <body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-content">
+
+      <div class="logo">
+        SPORTS HUB
+      </div>
+
+      <a href="https://wa.me/YOURNUMBER"
+         class="support-btn"
+         target="_blank">
+        Live Support
+      </a>
+
+    </div>
+  </header>
+
+  <!-- ONLINE STATUS -->
   <div class="container">
-
-    <!-- Image on Top -->
-    <div class="hero">
-    <a href="https://chat.wpmsg.me/MGmsg1/" onclick="gtag_report_conversion()">  <img src="600x1100.jpeg" alt="MG Lion Banner" />
+    <div class="online">
+      <span class="dot"></span>
+      Online Now: 14,208 Sports Fans
     </div>
-
-    <!-- Button Section -->
-    <div class="cta">
-      <button >WhatsApp Now</button></a>
-    </div>
-
-    <!-- Content Section -->
-    <div class="content">
-      <h2>100% Original Services | Trusted Service Provider</h2>
-      <p>
-        MG Lion Consultancy — Empowering Businesses Through Data, Design & Decisions Welcome to MG Lion8 Consultancy, India’s trusted partner for business growth, digital transformation, and conversion strategy. Based in Pune, we specialize in helping startups and established enterprises turn data insights into measurable results. Whether you’re struggling with low lead quality, high churn rates, or inefficient marketing spend, we bring clarity, structure, and strategy that deliver tangible outcomes.
-      </p></br>
-      <p>
-        Our philosophy is simple: growth begins with understanding. By combining behavioral psychology, marketing analytics, and customer journey mapping, we uncover what truly drives your users — and use that knowledge to design experiences that convert. At MG Lion8 Consultancy, every decision is supported by research and every recommendation is measurable.
-      </p></br>
-      <p>
-        Our Mission — Conversions That Create Confidence Many businesses measure success in clicks and followers. We measure it in actions and outcomes. Our mission is to help Indian brands move beyond surface-level marketing into data-driven, conversion-optimized growth. We build strategies that don’t just attract attention — they inspire action, build trust, and sustain profitability.
-      </p></br>
-      <p>
-        Through our structured growth programs, we ensure that every rupee you invest delivers real returns. Our consultants dive deep into your funnel, identify bottlenecks, and design measurable solutions to improve acquisition, activation, and retention.
-      </p></br>
-
-  <p>
-        
-Our Core Services 1. Business & Marketing Strategy We partner with leadership teams to create a clear path to growth. From go-to-market planning to revenue optimization, our consulting process blends research, positioning, and performance tracking to ensure alignment with business goals.
-      </p></br>
-      <p>
-<ol>
-       <li> Conversion Optimization (CRO) Turning visitors into customers is both an art and a science. We apply heatmaps, user testing, and A/B experiments to refine your digital experience. Every test is designed to improve engagement, boost trust, and increase conversion rates sustainably.</li>
-<li>Data & Analytics Setup We implement advanced analytics tools that reveal where your leads come from, what actions they take, and what influences their decisions. By integrating platforms like Google Analytics, Tag Manager, and CRM data, we create visibility across your entire funnel.</li>
-<li>Brand Positioning & Communication In a crowded digital world, clarity wins. We craft persuasive messaging and visual design that differentiate your brand and strengthen credibility. Our storytelling frameworks are built to resonate emotionally while aligning with your strategic objectives.</li>
-<li>Customer Retention & Loyalty Systems Growth doesn’t end with acquisition. We help brands design retention flows — including email sequences, loyalty programs, and reactivation campaigns — that increase lifetime value and reduce churn.</li><ol>
-      </p></br>
-
- <p>
-        
-Our Approach — The MG Lion8 Method Our consulting process is transparent, agile, and performance-driven. We follow a simple but effective four-stage method:
-      </p></br>
-
-
- <p>
-        
-Discover: We begin with deep discovery — understanding your customers, competitors, and performance data. Diagnose: Using analytics and behavioral insights, we identify what’s working and what’s holding you back. Design: We craft targeted solutions — from new landing pages to automated funnels — designed for measurable impact. Deliver: We execute, monitor, and optimize continuously to ensure your results improve month after month. Industries We Empower Over the years, MG Lion8 Consultancy has worked with businesses across a wide spectrum of industries, each with unique challenges and opportunities:
-      </p></br>
-
-
- <p>
-        
-Technology & SaaS: Simplifying onboarding and boosting trial-to-paid conversions. Retail & E-Commerce: Increasing cart completion rates and repeat purchases. Finance & Insurance: Streamlining lead qualification and improving trust-driven conversion funnels. Healthcare & Wellness: Building compliant, conversion-optimized patient acquisition systems. Education & Training: Enhancing enrollment rates through persuasive communication and optimized flows. Why Businesses Trust MG Lion8 Consultancy What sets MG Lion8 Consultancy apart is our commitment to clarity, ethics, and measurable growth. We don’t sell shortcuts; we build systems. We’re known for combining empathy with analytics, ensuring every campaign respects both user intent and business goals.
-      </p></br>
-
-
- <p>
-Our clients stay with us not because they have to — but because they see results. From better lead quality to improved ROI, every engagement brings accountability and transparency. We work as your strategic partner, not an external vendor.
-      </p></br>
-
-
- <p>
-Our Promise to You When you work with MG Lion8 Consultancy, you gain a partner obsessed with outcomes. We promise:
-      </p></br>
-
- <p>
-Data-driven recommendations that are actionable and clear. Ethical marketing that prioritizes user trust. Transparent reporting and regular performance reviews. Ongoing collaboration focused on continuous improvement. Start Your Growth Journey with MG Lion8 Consultancy Book a discovery session today and see how we can help you turn potential into performance. Let’s define your biggest opportunities and design a roadmap for measurable, sustainable growth.
-      </p></br>
-
- <p>
-MG Lion8 Consultancy 401, Solaris Business Hub, Baner, Pune, Maharashtra, India — 411045 📞 
-      </p></br>
-    </div>
-
-    <!-- Extra Links -->
-    <div class="links">
-      <a href="#">Subscribe on Twitch</a>
-      <a href="#">Become a Patron</a>
-      <a href="#">Shop My Work</a>
-      <a href="#">Join My Discord</a>
-    </div>
-
-    <footer>
-      © 2026 MG Lion. All rights reserved.
-    </footer>
-
   </div>
+
+  <!-- HERO -->
+  <section class="hero container">
+
+    <h1>
+      India's Premium<br>
+      Sports Community
+    </h1>
+
+    <p>
+      Stay connected with the latest sports updates,
+      match news, player stories and exciting moments
+      from the world of sports.
+    </p>
+
+    <a href="https://wa.me/YOURNUMBER"
+       class="hero-btn"
+       target="_blank">
+      Join Our Community
+    </a>
+
+  </section>
+
+  <!-- FEATURES -->
+  <section class="container features">
+
+    <div class="card">
+      <h3>⚡ Fast Updates</h3>
+      <p>
+        Get important sports news and updates quickly
+        from your favourite games and teams.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💬 24/7 Community</h3>
+      <p>
+        Connect with sports fans and stay involved
+        with the latest conversations.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- STEPS -->
+  <section class="container">
+
+    <h2 class="section-title">
+      Join Our Community in 3 Steps
+    </h2>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="number">1</div>
+        <h3>Connect With Us</h3>
+        <p>
+          Click the button and connect with our
+          sports community.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="number">2</div>
+        <h3>Choose Your Sports</h3>
+        <p>
+          Follow your favourite sports, teams and
+          players in one place.
+        </p>
+      </div>
+
+      <div class="step">
+        <div class="number">3</div>
+        <h3>Stay Updated</h3>
+        <p>
+          Receive the latest news, updates and
+          sports highlights.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SPORTS IMAGE -->
+  <section class="container">
+
+    <div class="sports-image">
+      <h2>
+        Your Sports.<br>
+        Your Community.
+      </h2>
+    </div>
+
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="container">
+
+    <div class="final-cta">
+
+      <h2>
+        Ready to Join?
+      </h2>
+
+      <p>
+        Connect with fellow sports fans and
+        never miss an important update.
+      </p>
+
+      <a href="https://wa.me/YOURNUMBER"
+         class="hero-btn"
+         target="_blank">
+        Chat With Us
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Sports Hub. All rights reserved.
+  </footer>
+
 </body>
 </html>
+```
