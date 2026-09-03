@@ -1,229 +1,431 @@
-<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mh</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, Helvetica, sans-serif;
-    }
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    body {
-      background: #000;
-      color: #fff;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      background: #000;
-    }
-li{max-width: 500px;margin: 0 auto;color: #ccc;}
-
-    /* Top Image Section */
-    .hero img {
-      width: 100%;
-      display: block;
-    }
-
-    /* CTA Section */
-    .cta {
-      padding: 20px;
-      text-align: center;
-    }
-
-    .cta button {
-      background: #25d366;
-      color: #fff;
-      border: none;
-      padding: 14px 24px;
-      font-size: 16px;
-      border-radius: 30px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .cta button:hover {
-      opacity: 0.9;
-    }
-
-    /* Content Section */
-    .content {
-      padding: 24px 20px 40px;
-    }
-
-    .content h2 {
-      font-size: 30px;
-      margin-bottom: 12px;
-      text-align: center;
-    }
-
-    .content p {
-      font-size: 16px;
-      margin-bottom: 14px;
-      color: #ccc;
-    }
-
-    /* Footer Buttons */
-    .links {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-      padding: 20px;
-    }
-
-    .links a {
-      text-decoration: none;
-      background: #1a1a1a;
-      color: #fff;
-      padding: 12px;
-      text-align: center;
-      border-radius: 8px;
-      font-size: 14px;
-    }
-
-    .links a:hover {
-      background: #2a2a2a;
-    }
-
-    footer {
-      padding: 16px;
-      text-align: center;
-      font-size: 12px;
-      color: #777;
-    }
-  </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18024209574"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18024209574');
-</script>
-
-
-<script src="../tracking.js"></script>
-
-<!-- Event snippet for Page view conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18024209574/EjYQCJfm8IocEKa5zpJD',
-      'value': 1.0,
-      'currency': 'INR',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="description" content="WhatsApp us now and get an instant response.">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <title>WhatsApp Now &amp; Get Instant Response</title>
 </head>
 
-
-
 <body>
-  <div class="container">
+  
 
-    <!-- Image on Top -->
-    <div class="hero">
-    <a href="https://admin.flipchat.link/pro/ipl2026" onclick="gtag_report_conversion()">  <img src="600x1100.png" alt="Anna King Banner" />
+<style>
+    :root {
+        --lightningcss-light: initial;
+        --lightningcss-dark: ;
+        color-scheme: light;
+        font-synthesis: none;
+        text-rendering: optimizelegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: #fff;
+        background: #062b0c;
+        font-family: Montserrat,Arial,Helvetica Neue,Helvetica,sans-serif
+    }
+    
+    * {
+        box-sizing: border-box
+    }
+    
+    html,body,#root {
+        height: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0
+    }
+    
+    body {
+        background: #062b0c;
+        min-height: 100svh
+    }
+    
+    :root {
+        --bg-darkest: #062b0c;
+        --bg-dark: #0c5a1c;
+        --bg-light: #1e8a30;
+        --lime-main: #7dc421;
+        --lime-bright: #b5ef2a;
+        --lime-dark: #6cbd18;
+        --white: #fff;
+        --cta-text: #1a3d08;
+        --dashed-border: #fff9;
+        --separator-line: #ffffff52;
+        --footer-border: #fff3;
+        --poster-max: 440px
+    }
+    
+    .page {
+        background: radial-gradient(ellipse 90% 65% at 50% 22%, var(--bg-light) 0%, var(--bg-dark) 52%, var(--bg-darkest) 100%);
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        min-height: 100svh;
+        padding: clamp(16px,4vw,32px);
+        display: flex
+    }
+    
+    .poster {
+        width: 100%;
+        max-width: var(--poster-max);
+        border-radius: 28px;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(14px,4.5cqi,22px);
+        padding: clamp(22px,7.7cqi,30px) clamp(16px,6.5cqi,28px) clamp(16px,5.6cqi,22px);
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        container-type: inline-size
+    }
+    
+    .bg-pattern {
+        opacity: .07;
+        pointer-events: none;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        inset: 0
+    }
+    
+    .paper-plane {
+        z-index: 1;
+        pointer-events: none;
+        width: clamp(30px,11cqi,48px);
+        height: auto;
+        position: absolute;
+        top: 6.8cqi;
+        left: 6.6%
+    }
+    
+    .leaf {
+        z-index: 0;
+        opacity: .9;
+        filter: drop-shadow(0 12px 16px #00000047);
+        pointer-events: none;
+        width: clamp(42px,14cqi,62px);
+        height: auto;
+        position: absolute;
+        bottom: -2%
+    }
+    
+    .leaf-left {
+        left: -2%
+    }
+    
+    .leaf-right {
+        right: -2%;
+        transform: scaleX(-1)
+    }
+    
+    .hero {
+        z-index: 2;
+        flex-direction: column;
+        align-items: center;
+        gap: clamp(10px,3vw,16px);
+        width: 100%;
+        display: flex;
+        position: relative
+    }
+    
+    .logo-wrap {
+        margin-bottom: 4px;
+        position: relative
+    }
+    
+    .logo {
+        filter: drop-shadow(0 8px 10px #00280059);
+        width: clamp(88px,33cqi,144px);
+        height: auto;
+        animation: 3.2s ease-in-out infinite logo-float;
+        display: block
+    }
+    
+    @keyframes logo-float {
+        0%,to {
+            transform: translateY(0)
+        }
+    
+        50% {
+            transform: translateY(-7px)
+        }
+    }
+    
+    .sparkle {
+        width: clamp(24px,10cqi,44px);
+        height: auto;
+        position: absolute;
+        top: -10px;
+        right: -16px
+    }
+    
+    .title {
+        color: var(--white);
+        letter-spacing: -.02em;
+        text-shadow: 0 3px 14px #00000061,0 1px #ffffff1a;
+        text-align: center;
+        white-space: nowrap;
+        margin: 0;
+        font-family: Montserrat,Arial,sans-serif;
+        font-size: clamp(30px,13.5cqi,68px);
+        font-weight: 900
+    }
+    
+    .now-row {
+        align-items: flex-end;
+        gap: clamp(6px,2cqi,12px);
+        display: flex
+    }
+    
+    .now-word {
+        color: var(--lime-main);
+        letter-spacing: -.03em;
+        text-shadow: 0 4px 20px #00000061;
+        font-family: Montserrat,Arial,sans-serif;
+        font-size: clamp(46px,21.5cqi,106px);
+        font-weight: 900;
+        line-height: .92
+    }
+    
+    .ampersand {
+        color: var(--white);
+        padding-bottom: .1em;
+        font-family: Montserrat,Arial,sans-serif;
+        font-size: clamp(18px,6.8cqi,33px);
+        font-weight: 800
+    }
+    
+    .get-row {
+        align-items: center;
+        gap: clamp(8px,2.5cqi,14px);
+        width: 100%;
+        display: flex
+    }
+    
+    .rule {
+        background: linear-gradient(to right, transparent, var(--separator-line), transparent);
+        flex: 1;
+        height: 2px
+    }
+    
+    .get-star {
+        flex-shrink: 0;
+        width: clamp(11px,3.6cqi,18px);
+        height: auto
+    }
+    
+    .get-text {
+        color: var(--white);
+        letter-spacing: .06em;
+        text-shadow: 0 2px 8px #00000047;
+        white-space: nowrap;
+        flex-shrink: 0;
+        font-family: Montserrat,Arial,sans-serif;
+        font-size: clamp(22px,9.4cqi,46px);
+        font-weight: 900
+    }
+    
+    .pill {
+        border: 2px dashed var(--dashed-border);
+        color: var(--white);
+        white-space: nowrap;
+        background: 0 0;
+        border-radius: 50px;
+        align-items: center;
+        gap: clamp(8px,2.4cqi,12px);
+        padding: clamp(9px,2.8cqi,13px) clamp(16px,5.8cqi,28px);
+        font-family: Montserrat,Arial,sans-serif;
+        font-size: clamp(13px,4.6cqi,22px);
+        font-weight: 700;
+        display: inline-flex
+    }
+    
+    .bell-circle {
+        border: 2px solid #ffffffa6;
+        border-radius: 50%;
+        flex-shrink: 0;
+        place-items: center;
+        width: clamp(24px,7.6cqi,36px);
+        height: clamp(24px,7.6cqi,36px);
+        display: grid
+    }
+    
+    .bell-circle img {
+        width: 55%;
+        height: 55%
+    }
+    
+    .cta {
+        z-index: 2;
+        background: linear-gradient(170deg,#b8f02a 0%,#8cd520 44%,#6cbd18 100%);
+        border-radius: 50px;
+        align-items: center;
+        gap: clamp(10px,3vw,14px);
+        width: 88%;
+        padding: clamp(8px,2.3vw,9px) clamp(12px,3.6vw,14px) clamp(8px,2.3vw,9px) clamp(8px,2.3vw,9px);
+        text-decoration: none;
+        transition: transform .15s,box-shadow .15s;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 6px 26px #69c3148c
+    }
+    
+    .cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 30px #69c314a6
+    }
+    
+    .cta:active {
+        transform: translateY(1px);
+        box-shadow: 0 4px 18px #69c31480
+    }
+    
+    .cta-highlight {
+        pointer-events: none;
+        background: #ffffff26;
+        border-radius: 50px 50px 0 0;
+        height: 48%;
+        position: absolute;
+        top: 0;
+        left: 12%;
+        right: 12%
+    }
+    
+    .cta-logo {
+        flex-shrink: 0;
+        width: clamp(34px,11.5cqi,54px);
+        height: auto;
+        position: relative
+    }
+    
+    .cta-text {
+        min-width: 0;
+        color: var(--cta-text);
+        flex-direction: column;
+        flex: 1;
+        font-family: Montserrat,Arial,sans-serif;
+        line-height: 1.2;
+        display: flex;
+        position: relative
+    }
+    
+    .cta-text span:first-child {
+        white-space: nowrap;
+        font-size: clamp(11px,3.4cqi,16px);
+        font-weight: 700
+    }
+    
+    .cta-text strong {
+        letter-spacing: -.01em;
+        white-space: nowrap;
+        font-size: clamp(15px,5.2cqi,24px);
+        font-weight: 900
+    }
+    
+    .cta-hand {
+        filter: drop-shadow(0 3px 3px #0000004d);
+        flex-shrink: 0;
+        width: clamp(26px,9cqi,42px);
+        height: auto;
+        position: relative
+    }
+    
+    .footer {
+        z-index: 2;
+        border-top: 1px solid var(--footer-border);
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 6px clamp(8px,2.4cqi,16px);
+        width: 94%;
+        margin: 0;
+        padding-top: clamp(10px,3.2cqi,14px);
+        list-style: none;
+        display: flex;
+        position: relative
+    }
+    
+    .footer li {
+        color: var(--white);
+        white-space: nowrap;
+        align-items: center;
+        gap: 5px;
+        font-family: Montserrat,Arial,sans-serif;
+        font-size: clamp(10px,3cqi,12px);
+        font-weight: 600;
+        display: flex
+    }
+    
+    .footer-icon {
+        flex-shrink: 0;
+        width: clamp(12px,3.6cqi,15px);
+        height: clamp(12px,3.6cqi,15px)
+    }
+    
+    .footer-sep {
+        color: #ffffff4d
+    }
+
+</style>
+
+
+  <div id="root">
+    <div class="page" role="presentation">
+      <main class="poster"><img class="bg-pattern" alt="" aria-hidden="true"
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20390%20760'%20width='390'%20height='760'%3e%3cg%20fill='none'%20stroke='white'%20stroke-width='2.5'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3cpath%20d='M292%2052%20C277%2052%20265%2061%20265%2073%20C265%2081%20270%2088%20277%2091%20L273%20103%20L285%2097%20C288%2098%20290%2099%20292%2099%20C307%2099%20319%2090%20319%2073%20C319%2061%20307%2052%20292%2052%20Z'%3e%3c/path%3e%3ccircle%20cx='282'%20cy='74'%20r='2.5'%20fill='white'%20stroke='none'%3e%3c/circle%3e%3ccircle%20cx='292'%20cy='74'%20r='2.5'%20fill='white'%20stroke='none'%3e%3c/circle%3e%3ccircle%20cx='302'%20cy='74'%20r='2.5'%20fill='white'%20stroke='none'%3e%3c/circle%3e%3cpath%20d='M350%20120%20C346%20117%20341%20119%20339%20124%20C337%20130%20339%20138%20345%20143%20C351%20148%20358%20149%20362%20146%20C366%20143%20366%20137%20362%20132'%3e%3c/path%3e%3crect%20x='16'%20y='314'%20width='38'%20height='26'%20rx='4'%3e%3c/rect%3e%3cpath%20d='M54%20319%20L68%20313%20L68%20339%20L54%20333%20Z'%3e%3c/path%3e%3cpath%20d='M338%20378%20C325%20378%20314%20386%20314%20397%20C314%20405%20318%20411%20325%20414%20L321%20425%20L333%20419%20C335%20420%20337%20421%20338%20421%20C351%20421%20362%20413%20362%20397%20C362%20386%20351%20378%20338%20378%20Z'%3e%3c/path%3e%3ccircle%20cx='328'%20cy='398'%20r='2'%20fill='white'%20stroke='none'%3e%3c/circle%3e%3ccircle%20cx='338'%20cy='398'%20r='2'%20fill='white'%20stroke='none'%3e%3c/circle%3e%3ccircle%20cx='348'%20cy='398'%20r='2'%20fill='white'%20stroke='none'%3e%3c/circle%3e%3crect%20x='10'%20y='574'%20width='48'%20height='36'%20rx='5'%3e%3c/rect%3e%3cpath%20d='M10%20582%20L34%20596%20L58%20582'%3e%3c/path%3e%3cpath%20d='M344%20618%20C340%20615%20335%20617%20333%20622%20C331%20628%20333%20636%20339%20641%20C345%20646%20352%20647%20356%20644%20C360%20641%20361%20635%20357%20630'%3e%3c/path%3e%3c/g%3e%3c/svg%3e"><img
+          class="paper-plane" alt="" aria-hidden="true"
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2054%2046'%20width='54'%20height='46'%20fill='none'%3e%3cpath%20d='M9%2023%20L48%208%20L36%2041%20L25%2029%20Z'%20stroke='white'%20stroke-width='1.8'%20stroke-linecap='round'%20stroke-linejoin='round'%3e%3c/path%3e%3cpath%20d='M25%2029%20L29%2039'%20stroke='white'%20stroke-width='1.8'%20stroke-linecap='round'%3e%3c/path%3e%3cpath%20d='M25%2029%20L36%2013'%20stroke='white'%20stroke-width='1.2'%20stroke-linecap='round'%3e%3c/path%3e%3cpath%20d='M4%2035%20C5%2031%207%2027%209%2023'%20stroke='white'%20stroke-width='1.5'%20stroke-dasharray='3,3.5'%20stroke-linecap='round'%3e%3c/path%3e%3ccircle%20cx='2'%20cy='39'%20r='3.5'%20stroke='white'%20stroke-width='1.4'%20stroke-dasharray='2,3'%3e%3c/circle%3e%3c/svg%3e"><img
+          class="leaf leaf-left" alt="" aria-hidden="true"
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2088%20112'%20width='88'%20height='112'%3e%3cpath%20d='M10%20108%20C-2%2074%2028%2034%2080%2012%20C58%2040%2014%2076%2010%20108%20Z'%20fill='%232a7018'%3e%3c/path%3e%3cpath%20d='M10%20108%20C15%2072%2046%2036%2080%2012'%20fill='none'%20stroke='%231e5210'%20stroke-width='1.5'%20stroke-linecap='round'%3e%3c/path%3e%3cpath%20d='M22%20104%20C10%2068%2042%2030%2084%2016%20C62%2042%2022%2070%2022%20104%20Z'%20fill='%233a8c24'%3e%3c/path%3e%3cpath%20d='M22%20104%20C26%2068%2056%2032%2084%2016'%20fill='none'%20stroke='%232a6818'%20stroke-width='1.4'%20stroke-linecap='round'%3e%3c/path%3e%3cpath%20d='M14%20110%20C2%2076%2034%2038%2082%2014%20C60%2042%2016%2078%2014%20110%20Z'%20fill='%234aad30'%3e%3c/path%3e%3cpath%20d='M14%20110%20C18%2074%2050%2036%2082%2014'%20fill='none'%20stroke='%233a8c24'%20stroke-width='1.3'%20stroke-linecap='round'%3e%3c/path%3e%3c/svg%3e"><img
+          class="leaf leaf-right" alt="" aria-hidden="true"
+          src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2088%20112'%20width='88'%20height='112'%3e%3cpath%20d='M10%20108%20C-2%2074%2028%2034%2080%2012%20C58%2040%2014%2076%2010%20108%20Z'%20fill='%232a7018'%3e%3c/path%3e%3cpath%20d='M10%20108%20C15%2072%2046%2036%2080%2012'%20fill='none'%20stroke='%231e5210'%20stroke-width='1.5'%20stroke-linecap='round'%3e%3c/path%3e%3cpath%20d='M22%20104%20C10%2068%2042%2030%2084%2016%20C62%2042%2022%2070%2022%20104%20Z'%20fill='%233a8c24'%3e%3c/path%3e%3cpath%20d='M22%20104%20C26%2068%2056%2032%2084%2016'%20fill='none'%20stroke='%232a6818'%20stroke-width='1.4'%20stroke-linecap='round'%3e%3c/path%3e%3cpath%20d='M14%20110%20C2%2076%2034%2038%2082%2014%20C60%2042%2016%2078%2014%20110%20Z'%20fill='%234aad30'%3e%3c/path%3e%3cpath%20d='M14%20110%20C18%2074%2050%2036%2082%2014'%20fill='none'%20stroke='%233a8c24'%20stroke-width='1.3'%20stroke-linecap='round'%3e%3c/path%3e%3c/svg%3e">
+        <section class="hero">
+        <a href="https://admin.flipchat.link/pro/ipl2026" target="_blank" rel="noopener noreferrer">  <div class="logo-wrap"> <img class="logo" alt="WhatsApp"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%20width='100'%20height='100'%3e%3cdefs%3e%3cradialGradient%20id='waGreen'%20cx='42%25'%20cy='34%25'%20r='66%25'%3e%3cstop%20offset='0%25'%20stop-color='%2370e055'%3e%3c/stop%3e%3cstop%20offset='52%25'%20stop-color='%232fc018'%3e%3c/stop%3e%3cstop%20offset='100%25'%20stop-color='%23188c0c'%3e%3c/stop%3e%3c/radialGradient%3e%3cradialGradient%20id='waGloss'%20cx='36%25'%20cy='26%25'%20r='44%25'%3e%3cstop%20offset='0%25'%20stop-color='rgba(255,255,255,0.38)'%3e%3c/stop%3e%3cstop%20offset='100%25'%20stop-color='rgba(255,255,255,0)'%3e%3c/stop%3e%3c/radialGradient%3e%3cfilter%20id='waShad'%20x='-25%25'%20y='-20%25'%20width='150%25'%20height='158%25'%3e%3cfeDropShadow%20dx='0'%20dy='6'%20stdDeviation='8'%20flood-color='rgba(0,55,0,0.55)'%3e%3c/feDropShadow%3e%3c/filter%3e%3c/defs%3e%3cpath%20d='M50%204%20C25%204%205%2022%205%2050%20C5%2063%209%2074%2017%2083%20L9%2097%20L26%2090%20C33%2094%2041%2096%2050%2096%20C75%2096%2095%2077%2095%2050%20C95%2022%2075%204%2050%204%20Z'%20fill='white'%20filter='url(%23waShad)'%3e%3c/path%3e%3cg%20transform='translate(11.5%2011.5)%20scale(3.19)'%20fill='url(%23waGreen)'%3e%3cpath%20d='M17.472%2014.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94%201.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198%200-.52.074-.792.372-.272.297-1.04%201.016-1.04%202.479%200%201.462%201.065%202.875%201.213%203.074.149.198%202.096%203.2%205.077%204.487.709.306%201.262.489%201.694.625.712.227%201.36.195%201.871.118.571-.085%201.758-.719%202.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421%207.403h-.004a9.87%209.87%200%2001-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86%209.86%200%2001-1.51-5.26c.001-5.45%204.436-9.884%209.888-9.884%202.64%200%205.122%201.03%206.988%202.898a9.825%209.825%200%20012.893%206.994c-.003%205.45-4.437%209.884-9.885%209.884m8.413-18.297A11.815%2011.815%200%200012.05%200C5.495%200%20.16%205.335.157%2011.892c0%202.096.547%204.142%201.588%205.945L.057%2024l6.305-1.654a11.882%2011.882%200%20005.683%201.448h.005c6.554%200%2011.89-5.335%2011.893-11.893a11.821%2011.821%200%2000-3.48-8.413Z'%3e%3c/path%3e%3c/g%3e%3cellipse%20cx='34'%20cy='26'%20rx='18'%20ry='10'%20fill='url(%23waGloss)'%20transform='rotate(-25,34,26)'%3e%3c/ellipse%3e%3c/svg%3e"><img
+              class="sparkle" alt="" aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2044%2044'%20width='44'%20height='44'%20fill='none'%3e%3cline%20x1='20'%20y1='3'%20x2='20'%20y2='14'%20stroke='%23b5ef2a'%20stroke-width='3.5'%20stroke-linecap='round'%3e%3c/line%3e%3cline%20x1='33'%20y1='8'%20x2='26'%20y2='15'%20stroke='%23b5ef2a'%20stroke-width='3.5'%20stroke-linecap='round'%3e%3c/line%3e%3cline%20x1='39'%20y1='22'%20x2='28'%20y2='22'%20stroke='%23b5ef2a'%20stroke-width='3.5'%20stroke-linecap='round'%3e%3c/line%3e%3c/svg%3e">
+          </div></a>
+          <h1 class="title">WhatsApp</h1>
+          <div class="now-row"><strong class="now-word">NOW</strong><span class="ampersand">&amp;</span></div>
+          <div class="get-row"><span class="rule"></span><img class="get-star" alt="" aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%20width='20'%20height='20'%3e%3cpolygon%20points='10,1%2012.4,7.6%2019.5,7.6%2013.8,12%2015.9,18.5%2010,14.5%204.1,18.5%206.2,12%200.5,7.6%207.6,7.6'%20fill='%237dc421'%3e%3c/polygon%3e%3c/svg%3e"><span
+              class="get-text">GET</span><img class="get-star" alt="" aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2020%2020'%20width='20'%20height='20'%3e%3cpolygon%20points='10,1%2012.4,7.6%2019.5,7.6%2013.8,12%2015.9,18.5%2010,14.5%204.1,18.5%206.2,12%200.5,7.6%207.6,7.6'%20fill='%237dc421'%3e%3c/polygon%3e%3c/svg%3e"><span
+              class="rule"></span></div>
+         <a href="https://admin.flipchat.link/pro/ipl2026" target="_blank" rel="noopener noreferrer"> <div class="pill"><span class="bell-circle"><img alt="" aria-hidden="true"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20width='24'%20height='24'%20fill='white'%3e%3cpath%20d='M12%2022c1.1%200%202-.9%202-2h-4c0%201.1.9%202%202%202zm6-6V11c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5%201.5v.68C7.63%205.36%206%207.92%206%2011v5l-2%202v1h16v-1l-2-2z'%3e%3c/path%3e%3c/svg%3e"></span><span>Instant
+              Response</span></div></a>
+        </section><a class="cta" <a href="https://admin.flipchat.link/pro/ipl2026" target="_blank" rel="noopener noreferrer"><span
+            class="cta-highlight" aria-hidden="true"></span><img class="cta-logo" alt="" aria-hidden="true"
+            src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%20width='100'%20height='100'%3e%3cdefs%3e%3cradialGradient%20id='waGreen'%20cx='42%25'%20cy='34%25'%20r='66%25'%3e%3cstop%20offset='0%25'%20stop-color='%2370e055'%3e%3c/stop%3e%3cstop%20offset='52%25'%20stop-color='%232fc018'%3e%3c/stop%3e%3cstop%20offset='100%25'%20stop-color='%23188c0c'%3e%3c/stop%3e%3c/radialGradient%3e%3cradialGradient%20id='waGloss'%20cx='36%25'%20cy='26%25'%20r='44%25'%3e%3cstop%20offset='0%25'%20stop-color='rgba(255,255,255,0.38)'%3e%3c/stop%3e%3cstop%20offset='100%25'%20stop-color='rgba(255,255,255,0)'%3e%3c/stop%3e%3c/radialGradient%3e%3cfilter%20id='waShad'%20x='-25%25'%20y='-20%25'%20width='150%25'%20height='158%25'%3e%3cfeDropShadow%20dx='0'%20dy='6'%20stdDeviation='8'%20flood-color='rgba(0,55,0,0.55)'%3e%3c/feDropShadow%3e%3c/filter%3e%3c/defs%3e%3cpath%20d='M50%204%20C25%204%205%2022%205%2050%20C5%2063%209%2074%2017%2083%20L9%2097%20L26%2090%20C33%2094%2041%2096%2050%2096%20C75%2096%2095%2077%2095%2050%20C95%2022%2075%204%2050%204%20Z'%20fill='white'%20filter='url(%23waShad)'%3e%3c/path%3e%3cg%20transform='translate(11.5%2011.5)%20scale(3.19)'%20fill='url(%23waGreen)'%3e%3cpath%20d='M17.472%2014.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94%201.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198%200-.52.074-.792.372-.272.297-1.04%201.016-1.04%202.479%200%201.462%201.065%202.875%201.213%203.074.149.198%202.096%203.2%205.077%204.487.709.306%201.262.489%201.694.625.712.227%201.36.195%201.871.118.571-.085%201.758-.719%202.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421%207.403h-.004a9.87%209.87%200%2001-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86%209.86%200%2001-1.51-5.26c.001-5.45%204.436-9.884%209.888-9.884%202.64%200%205.122%201.03%206.988%202.898a9.825%209.825%200%20012.893%206.994c-.003%205.45-4.437%209.884-9.885%209.884m8.413-18.297A11.815%2011.815%200%200012.05%200C5.495%200%20.16%205.335.157%2011.892c0%202.096.547%204.142%201.588%205.945L.057%2024l6.305-1.654a11.882%2011.882%200%20005.683%201.448h.005c6.554%200%2011.89-5.335%2011.893-11.893a11.821%2011.821%200%2000-3.48-8.413Z'%3e%3c/path%3e%3c/g%3e%3cellipse%20cx='34'%20cy='26'%20rx='18'%20ry='10'%20fill='url(%23waGloss)'%20transform='rotate(-25,34,26)'%3e%3c/ellipse%3e%3c/svg%3e"><span
+            class="cta-text"><span>Click Here And</span><strong>WhatsApp</strong></span><img class="cta-hand" alt=""
+            aria-hidden="true" src="hand-cursor-BF5HOkzi.png"></a>
+        <ul class="footer">
+          <li><img class="footer-icon" alt="" aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2036%2036'%3e%3cpath%20fill='%2377B255'%20d='M36%2032c0%202.209-1.791%204-4%204H4c-2.209%200-4-1.791-4-4V4c0-2.209%201.791-4%204-4h28c2.209%200%204%201.791%204%204v28z'/%3e%3cpath%20fill='%23FFF'%20d='M29.28%206.362c-1.156-.751-2.704-.422-3.458.736L14.936%2023.877l-5.029-4.65c-1.014-.938-2.596-.875-3.533.138-.937%201.014-.875%202.596.139%203.533l7.209%206.666c.48.445%201.09.665%201.696.665.673%200%201.534-.282%202.099-1.139.332-.506%2012.5-19.27%2012.5-19.27.751-1.159.421-2.707-.737-3.458z'/%3e%3c/svg%3e"><span>100%
+              Secure</span></li>
+          <li class="footer-sep" aria-hidden="true">|</li>
+          <li><img class="footer-icon" alt="" aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2036%2036'%3e%3cpath%20fill='%23FFAC33'%20d='M32.938%2015.651C32.792%2015.26%2032.418%2015%2032%2015H19.925L26.89%201.458c.219-.426.106-.947-.271-1.243C26.437.071%2026.218%200%2026%200c-.233%200-.466.082-.653.243L18%206.588%203.347%2019.243c-.316.273-.43.714-.284%201.105S3.582%2021%204%2021h12.075L9.11%2034.542c-.219.426-.106.947.271%201.243.182.144.401.215.619.215.233%200%20.466-.082.653-.243L18%2029.412l14.653-12.655c.317-.273.43-.714.285-1.106z'/%3e%3c/svg%3e"><span>Quick
+              Support</span></li>
+          <li class="footer-sep" aria-hidden="true">|</li>
+          <li><img class="footer-icon" alt="" aria-hidden="true"
+              src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2036%2036'%3e%3cpath%20fill='%23BDDDF4'%20d='M18%201C8.059%201%200%207.268%200%2015c0%204.368%202.574%208.268%206.604%2010.835C6.08%2028.144%204.859%2031.569%202%2035c5.758-.96%209.439-3.761%2011.716-6.416%201.376.262%202.805.416%204.284.416%209.941%200%2018-6.268%2018-14S27.941%201%2018%201z'/%3e%3ccircle%20fill='%232A6797'%20cx='18'%20cy='15'%20r='2'/%3e%3ccircle%20fill='%232A6797'%20cx='26'%20cy='15'%20r='2'/%3e%3ccircle%20fill='%232A6797'%20cx='10'%20cy='15'%20r='2'/%3e%3c/svg%3e"><span>Talk
+              Directly</span></li>
+        </ul>
+      </main>
     </div>
-
-    <!-- Button Section -->
-    <div class="cta">
-      <button >WhatsApp Now</button></a>
-    </div>
-
-    <!-- Content Section -->
-    <div class="content">
-      <h2>100% Original Services | Trusted Service Provider</h2>
-      <p>
-        Anna King Consultancy — Empowering Businesses Through Data, Design & Decisions Welcome to Fun888 Consultancy, India’s trusted partner for business growth, digital transformation, and conversion strategy. Based in Pune, we specialize in helping startups and established enterprises turn data insights into measurable results. Whether you’re struggling with low lead quality, high churn rates, or inefficient marketing spend, we bring clarity, structure, and strategy that deliver tangible outcomes.
-      </p></br>
-      <p>
-        Our philosophy is simple: growth begins with understanding. By combining behavioral psychology, marketing analytics, and customer journey mapping, we uncover what truly drives your users — and use that knowledge to design experiences that convert. At Fun888 Consultancy, every decision is supported by research and every recommendation is measurable.
-      </p></br>
-      <p>
-        Our Mission — Conversions That Create Confidence Many businesses measure success in clicks and followers. We measure it in actions and outcomes. Our mission is to help Indian brands move beyond surface-level marketing into data-driven, conversion-optimized growth. We build strategies that don’t just attract attention — they inspire action, build trust, and sustain profitability.
-      </p></br>
-      <p>
-        Through our structured growth programs, we ensure that every rupee you invest delivers real returns. Our consultants dive deep into your funnel, identify bottlenecks, and design measurable solutions to improve acquisition, activation, and retention.
-      </p></br>
-
-  <p>
-        
-Our Core Services 1. Business & Marketing Strategy We partner with leadership teams to create a clear path to growth. From go-to-market planning to revenue optimization, our consulting process blends research, positioning, and performance tracking to ensure alignment with business goals.
-      </p></br>
-      <p>
-<ol>
-       <li> Conversion Optimization (CRO) Turning visitors into customers is both an art and a science. We apply heatmaps, user testing, and A/B experiments to refine your digital experience. Every test is designed to improve engagement, boost trust, and increase conversion rates sustainably.</li>
-<li>Data & Analytics Setup We implement advanced analytics tools that reveal where your leads come from, what actions they take, and what influences their decisions. By integrating platforms like Google Analytics, Tag Manager, and CRM data, we create visibility across your entire funnel.</li>
-<li>Brand Positioning & Communication In a crowded digital world, clarity wins. We craft persuasive messaging and visual design that differentiate your brand and strengthen credibility. Our storytelling frameworks are built to resonate emotionally while aligning with your strategic objectives.</li>
-<li>Customer Retention & Loyalty Systems Growth doesn’t end with acquisition. We help brands design retention flows — including email sequences, loyalty programs, and reactivation campaigns — that increase lifetime value and reduce churn.</li><ol>
-      </p></br>
-
- <p>
-        
-Our Approach — The Fun888 Method Our consulting process is transparent, agile, and performance-driven. We follow a simple but effective four-stage method:
-      </p></br>
-
-
- <p>
-        
-Discover: We begin with deep discovery — understanding your customers, competitors, and performance data. Diagnose: Using analytics and behavioral insights, we identify what’s working and what’s holding you back. Design: We craft targeted solutions — from new landing pages to automated funnels — designed for measurable impact. Deliver: We execute, monitor, and optimize continuously to ensure your results improve month after month. Industries We Empower Over the years, Fun888 Consultancy has worked with businesses across a wide spectrum of industries, each with unique challenges and opportunities:
-      </p></br>
-
-
- <p>
-        
-Technology & SaaS: Simplifying onboarding and boosting trial-to-paid conversions. Retail & E-Commerce: Increasing cart completion rates and repeat purchases. Finance & Insurance: Streamlining lead qualification and improving trust-driven conversion funnels. Healthcare & Wellness: Building compliant, conversion-optimized patient acquisition systems. Education & Training: Enhancing enrollment rates through persuasive communication and optimized flows. Why Businesses Trust Fun888 Consultancy What sets Fun888 Consultancy apart is our commitment to clarity, ethics, and measurable growth. We don’t sell shortcuts; we build systems. We’re known for combining empathy with analytics, ensuring every campaign respects both user intent and business goals.
-      </p></br>
-
-
- <p>
-Our clients stay with us not because they have to — but because they see results. From better lead quality to improved ROI, every engagement brings accountability and transparency. We work as your strategic partner, not an external vendor.
-      </p></br>
-
-
- <p>
-Our Promise to You When you work with Fun888 Consultancy, you gain a partner obsessed with outcomes. We promise:
-      </p></br>
-
- <p>
-Data-driven recommendations that are actionable and clear. Ethical marketing that prioritizes user trust. Transparent reporting and regular performance reviews. Ongoing collaboration focused on continuous improvement. Start Your Growth Journey with Fun888 Consultancy Book a discovery session today and see how we can help you turn potential into performance. Let’s define your biggest opportunities and design a roadmap for measurable, sustainable growth.
-      </p></br>
-
- <p>
-Fun888 Consultancy 401, Solaris Business Hub, Baner, Pune, Maharashtra, India — 411045 📞 
-      </p></br>
-    </div>
-
-    <!-- Extra Links -->
-    <div class="links">
-      <a href="#">Subscribe on Twitch</a>
-      <a href="#">Become a Patron</a>
-      <a href="#">Shop My Work</a>
-      <a href="#">Join My Discord</a>
-    </div>
-
-    <footer>
-      © 2026 Anna King. All rights reserved.
-    </footer>
-
   </div>
+
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"5091ded975744d39a10c8f9d5b9f3eb8","r":1}' crossorigin="anonymous"></script>
 </body>
+
 </html>
